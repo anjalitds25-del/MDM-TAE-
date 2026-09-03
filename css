@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #111a33;
+    color: white;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 850px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #aebde0;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+#gameBox {
+    height: 320px;
+    background: #26385f;
+    border: 1px solid #49618f;
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    transition: 0.3s;
+}
+
+.icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+#message {
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+button {
+    padding: 14px 70px;
+    background: #7c5cff;
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background: #6546e8;
+    transform: scale(1.03);
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.statBox {
+    width: 33%;
+    padding: 18px;
+    background: #182542;
+    border: 1px solid #40557d;
+    border-radius: 10px;
+}
+
+.statBox h3 {
+    color: #aebde0;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.statBox p {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .stats {
+        flex-direction: column;
+    }
+
+    .statBox {
+        width: 100%;
+    }
+
+}
